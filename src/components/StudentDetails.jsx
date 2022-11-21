@@ -11,6 +11,8 @@ const StudentDetails = () => {
 
   const [gpa, setGpa] = useState(null)
 
+  const [gradeLetter, setLetter] = useState('')
+
   const {studentId} = useParams()
 
   useEffect(() => {
@@ -28,13 +30,34 @@ const StudentDetails = () => {
     ))
     const average = grades.reduce((a, b) => a + b, 0) / grades.length
     setGpa(average)
-    console.log(grades)
-    console.log(average)
   }
+
+
 
   useEffect(() => {
     gpaCalc(courses)
   }, [courses])
+
+  const letterGPA =(gpa) => {
+    switch (gpa){
+      case 1:
+        setLetter('D')
+        break
+      case 2: 
+        setLetter('C')
+        break
+      case 3: 
+        setLetter('B')
+        break
+      case 4: 
+        setLetter('A')
+        break
+    }
+  }
+  useEffect(()=> {
+    letterGPA(gpa)
+  },[gpa])
+
 
   return (
     
@@ -47,7 +70,7 @@ const StudentDetails = () => {
         {student.house}
         </div>
         <div>
-          GPA: {gpa? <p>{gpa}</p>:null}
+          GPA: {gpa? <p>{gradeLetter}</p>:null}
         </div>
         <div>
         {courses.map((course) => (

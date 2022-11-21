@@ -75,3 +75,39 @@ flex-direction: column;
 .studentCourseGrade{
 
 }
+
+/* HOME PAGE */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.homeNavIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeNavDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+.homeIcon {
+  width: 100%;
+}
+
+.homeNavText {
+  text-decoration: none;
+  color: white;
+  font-family: 'Henny Penny', cursive;
+  font-size: 50px;
+}

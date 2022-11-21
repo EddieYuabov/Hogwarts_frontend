@@ -1,11 +1,12 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import Client, { BASE_URL } from '../services/api'
 import CourseCard from '../components/CourseCard'
 
 const Courses = () => {
   const [courses, setCourses] = useState([])
+  const { courseId } = useParams()
 
   useEffect(() => {
     const getCourses = async () => {
@@ -13,12 +14,12 @@ const Courses = () => {
       setCourses(response?.data)
     }
     getCourses()
-  })
+  }, [])
 
   return (
     <div>
       {courses.map((course) => (
-        <Link to={`/${course.id}`} key={course.id}>
+        <Link to={`/course/${course.id}`} key={course.id}>
           <CourseCard name={course.name} professor={course.professor} />
         </Link>
       ))}

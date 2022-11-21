@@ -1,15 +1,16 @@
-import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Nav from './components/Nav'
 import Students from './pages/Students'
-import Courses from './components/Courses'
+import Courses from './pages/Courses'
 
 function App() {
+  const BASE_URL = 'http://localhost3001/api'
+
   return (
     <div className="App">
       <header className="App-header">
-        <Route element={<Nav />} />
+        <Nav />
       </header>
       <Routes>
         <Route path="/" element={<Home />} />

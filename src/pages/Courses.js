@@ -18,11 +18,18 @@ const Courses = () => {
 
   return (
     <div>
-      {courses.map((course) => (
-        <Link to={`/course/${course.id}`} key={course.id}>
-          <CourseCard name={course.name} professor={course.professor} />
+      <div>
+        <Link to={`/createcourse`}>
+          <div>Create Course</div>
         </Link>
-      ))}
+      </div>
+      <div>
+        {courses.map((course) => (
+          <Link to={`/course/${course.id}`} key={course.id}>
+            <CourseCard name={course.name} professor={course.professor} />
+          </Link>
+        ))}
+      </div>
     </div>
   )
 }

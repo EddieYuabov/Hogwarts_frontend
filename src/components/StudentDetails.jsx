@@ -51,7 +51,7 @@ const StudentDetails = () => {
         </div>
         <div>
         {courses.map((course) => (
-          <CourseCard name = {course.name} professor = {course.professor} key={course.id}/>
+          <CourseCard name = {course.name} professor = {course.professor} grade = {course.Student_Courses.grade} key={course.id}/>
         ))}
         </div>
       </h1>

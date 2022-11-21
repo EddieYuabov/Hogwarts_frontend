@@ -6,11 +6,14 @@ import CourseCard from './CourseCard'
 
 const StudentDetails = () => {
     const [student, setStudent] = useState([])
+    const [courses, setCourses] = useState([])
     const {studentId} = useParams()
     useEffect(() => {
       const getStudent = async () => {
         let response = await Client.get(`/students/${studentId}`)
         setStudent(response.data)
+        setCourses(response.data.courses)
+        console.log(response.data.courses)
         console.log(response.data)
       }
       getStudent()
@@ -21,9 +24,9 @@ const StudentDetails = () => {
     <div>
       <h1>
         {student.name}
-        {student?(student.courses.map((course) => (
-          <CourseCard name = {course.name} professor = {course.professor}/>
-        ))): null}
+        {courses.map((course) => (
+          <CourseCard name = {course.name} professor = {course.professor} key={course.id}/>
+        ))}
       </h1>
     </div>
   )

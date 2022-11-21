@@ -62,22 +62,24 @@ const StudentDetails = () => {
   return (
     
     <div>
-      <h1>
-        <div className="studentName">
+      <div className='studentContainer'>
+        <div>
+          <div className="studentName">
         {student.name}
         </div>
-        <div>
+        <div className='studentHouse'>
         {student.house}
         </div>
-        <div>
+        <div className='gpa'>
           GPA: {gpa? <p>{gradeLetter}</p>:null}
+        </div>
         </div>
         <div>
         {courses.map((course) => (
           <CourseCard name = {course.name} professor = {course.professor} grade = {course.Student_Courses.grade} key={course.id}/>
         ))}
         </div>
-      </h1>
+      </div>
     </div>
   )
 }

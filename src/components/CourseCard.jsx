@@ -2,10 +2,10 @@ import React from 'react'
 
 const CourseCard = ({name, professor, grade}) => {
   return (
-    <div>
-        <h5>{name}</h5>
-        <h5>{professor}</h5>  
-        {grade}
+    <div className='courseCardContainer'>
+        <h5 className='courseName'>{name}</h5>
+        <h5 className='courseProf'>{professor}</h5>  
+        <h5 className='studentCourseGrade'>{grade}</h5>
     </div>
   )
 }

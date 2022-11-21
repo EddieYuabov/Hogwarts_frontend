@@ -37,8 +37,41 @@ body {
   justify-content: space-between;
 }
 
-/* STUDENT PAGE */
+/* STUDENT DETAILS PAGE */
 
+.studentContainer{
+display: flex;
+flex-direction: column;
+}
+
+.gradeAlignment{
+  display: flex;
+}
 .studentName {
   font-family: 'Henny Penny', cursive;
+}
+
+.studentHouse{
+
+}
+
+.gpa{
+
+}
+
+/* COURSE CARD */
+.courseCardContainer{
+
+}
+
+.courseName{
+
+}
+
+.courseProf{
+
+}
+
+.studentCourseGrade{
+
 }

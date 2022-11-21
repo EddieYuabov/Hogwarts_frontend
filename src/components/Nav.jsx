@@ -2,11 +2,15 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 const Nav = () => {
   return (
-    <div>
-        <nav>
-        <Link to = '/'>Home</Link>
-        <Link to = '/students'>Students</Link>
-        <Link to = '/courses'>Courses</Link>
+    <div className="header">
+        <nav className="navBar">
+        <div className="homeLinks">
+        <Link to = '/' className="homeLink">Home</Link>
+        </div>
+        <div className="navLinks">
+        <Link to = '/students' className="homeLink">Students</Link>
+        <Link to = '/courses' className="homeLink">Courses</Link>
+        </div>
         </nav>
     </div>
   )

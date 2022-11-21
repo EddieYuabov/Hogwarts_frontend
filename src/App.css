@@ -36,3 +36,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+/* STUDENT PAGE */
+
+.studentName {
+  font-family: 'Henny Penny', cursive;
+}

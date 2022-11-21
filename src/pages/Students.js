@@ -17,11 +17,18 @@ const Students = () => {
 
   return (
     <div>
-      {students.map((student) => (
-        <Link to={`/${student.id}`} key={student.id}>
-          <StudentCard name={student.name} house={student.house} />
+      <div>
+        <Link to={`/createstudent`}>
+          <div>Create New Student</div>
         </Link>
-      ))}
+      </div>
+      <div>
+        {students.map((student) => (
+          <Link to={`/${student.id}`} key={student.id}>
+            <StudentCard name={student.name} house={student.house} />
+          </Link>
+        ))}
+      </div>
     </div>
   )
 }

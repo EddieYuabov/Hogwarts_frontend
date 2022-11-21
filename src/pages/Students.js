@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import Client, { BASE_URL } from '../services/api'
+import Client from '../services/api'
 import StudentCard from '../components/StudentCard'
 
 const Students = () => {

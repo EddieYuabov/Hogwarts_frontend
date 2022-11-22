@@ -56,6 +56,7 @@ useEffect(()=> {
       <h1 className="courseDetailName">{course.name}</h1>
       <div>{image}</div>
       <h2 className="courseDetailProf">Professor: {course.professor}</h2>
+      <div className="enrolledStudents">Enrolled Students:</div>
       {students.map((res) => {
     for (let i = 0; i < students.length; i++) {
       for(let k = 0; k < res.courses.length; k++){

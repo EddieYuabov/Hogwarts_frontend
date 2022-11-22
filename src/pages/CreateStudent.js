@@ -65,7 +65,7 @@ const CreateStudent = () => {
             <option value="Gryffindor">Gryffindor</option>
             <option value="Slytherin">Slytherin</option>
             <option value="Hufflepuff">Hufflepuff</option>
-            <option value="Slytherin">Ravenclaw</option>
+            <option value="Ravenclaw">Ravenclaw</option>
           </select>
         </div>
       </form>

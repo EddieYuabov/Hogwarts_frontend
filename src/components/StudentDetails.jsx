@@ -38,25 +38,25 @@ const StudentDetails = () => {
     gpaCalc(courses)
   }, [courses])
 
-  const letterGPA =(gpa) => {
-    switch (gpa){
-      case 1:
-        setLetter('D')
-        break
-      case 2: 
-        setLetter('C')
-        break
-      case 3: 
-        setLetter('B')
-        break
-      case 4: 
-        setLetter('A')
-        break
-    }
-  }
-  useEffect(()=> {
-    letterGPA(gpa)
-  },[gpa])
+  // const letterGPA =(gpa) => {
+  //   switch (gpa){
+  //     case 1:
+  //       setLetter('D')
+  //       break
+  //     case 2: 
+  //       setLetter('C')
+  //       break
+  //     case 3: 
+  //       setLetter('B')
+  //       break
+  //     case 4: 
+  //       setLetter('A')
+  //       break
+  //   }
+  // }
+  // useEffect(()=> {
+  //   letterGPA(gpa)
+  // },[gpa])
 
 let image 
 
@@ -76,7 +76,6 @@ switch (student.house) {
   default:
     break;
 }
-
 
 let className
 switch (student.house) {
@@ -116,7 +115,7 @@ switch (student.house) {
         </div>
         <div className='gpaDiv'>
           <div className="gpa">{student.name}'s overall GPA:</div> 
-          <div className="gpaLetter">{gpa? <p>{gradeLetter}</p>:null}</div>
+          <div className="gpaLetter">{gpa? <p>{gpa}</p>:null}</div>
         </div>
       </div>
       <Link to={`/students`} className="createLink">

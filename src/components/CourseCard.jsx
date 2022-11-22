@@ -1,6 +1,9 @@
 import React from 'react'
+import {useState, useEffect} from 'react'
 
 const CourseCard = ({name, professor, grade}) => {
+
+  const [gradeLetter, setLetter] = useState('')
 
   let image
 
@@ -27,11 +30,31 @@ const CourseCard = ({name, professor, grade}) => {
       break;
   }
 
+  const letterGPA =(grade) => {
+    switch (grade){
+      case 1:
+        setLetter('D')
+        break
+      case 2: 
+        setLetter('C')
+        break
+      case 3: 
+        setLetter('B')
+        break
+      case 4: 
+        setLetter('A')
+        break
+    }
+  }
+  useEffect(()=> {
+    letterGPA(grade)
+  },[grade])
+
   return (
     <div className='courseCardContainer'>
         <h5 className='courseName'>{name}</h5>
         <h5 className='courseProf'>{professor}</h5>  
-        <h5 className='studentCourseGrade'>{grade}</h5>
+        <h5 className='studentCourseGrade'>{gradeLetter}</h5>
         {image}
     </div>
   )

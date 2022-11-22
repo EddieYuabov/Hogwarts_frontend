@@ -381,8 +381,8 @@ body {
 
   /* COURSE DETAILS PAGE */
 
-  .courseCardImage {
-    width: 150px;
+  .courseDetailImage {
+    width: 150px; 
     margin: -25px 0 40px 0;
   }
 

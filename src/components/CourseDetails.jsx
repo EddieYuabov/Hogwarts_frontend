@@ -59,11 +59,11 @@ useEffect(()=> {
       {students.map((res) => {
     for (let i = 0; i < students.length; i++) {
       for(let k = 0; k < res.courses.length; k++){
-        if (students[i].courses[k].Student_Courses.courseId === course.id) {
+        if (res.courses[k].Student_Courses.courseId === course.id) {
           return (
-            <div key={students[i].id}>
-              <Link to={`/${students[i].id}`} className="cardInfoDiv">
-              <StudentCard name={students[i].name} house={students[i].house} />
+            <div key={res.id}>
+              <Link to={`/${res.id}`} className="cardInfoDiv">
+              <StudentCard name={res.name} house={res.house} />
               </Link>
             </div>
           )

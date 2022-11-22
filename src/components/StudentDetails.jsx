@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Client from '../services/api'
 import CourseCard from './CourseCard'
@@ -70,16 +70,20 @@ const StudentDetails = () => {
         <div className='studentHouse'>
         {student.house}
         </div>
-        <div className='gpa'>
-          GPA: {gpa? <p>{gradeLetter}</p>:null}
-        </div>
         </div>
         <div>
         {courses.map((course) => (
           <CourseCard name = {course.name} professor = {course.professor} grade = {course.Student_Courses.grade} key={course.id}/>
         ))}
         </div>
+        <div className='gpaDiv'>
+          <div className="gpa">{student.name}'s overall GPA:</div> 
+          <div className="gpaLetter">{gpa? <p>{gradeLetter}</p>:null}</div>
+        </div>
       </div>
+      <Link to={`/students`} className="createLink">
+          <div className="createButton">BACK</div>
+      </Link>
     </div>
   )
 }

@@ -18,13 +18,13 @@ const Students = () => {
   return (
     <div>
       <div>
-        <Link to={`/createstudent`}>
-          <div>Create New Student</div>
+        <Link to={`/createstudent`} className="createLink">
+          <div className="createButton">CREATE NEW</div>
         </Link>
       </div>
       <div>
         {students.map((student) => (
-          <Link to={`/${student.id}`} key={student.id}>
+          <Link to={`/${student.id}`} key={student.id} className="cardInfoDiv">
             <StudentCard name={student.name} house={student.house} />
           </Link>
         ))}

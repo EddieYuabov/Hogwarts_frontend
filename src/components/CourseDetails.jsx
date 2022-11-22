@@ -57,6 +57,7 @@ useEffect(()=> {
       <div>{image}</div>
       <h2 className="courseDetailProf">Professor: {course.professor}</h2>
       <div className="enrolledStudents">Enrolled Students:</div>
+      <div className="enrolledStudentsDiv">
       {students.map((res) => {
     for (let i = 0; i < students.length; i++) {
       for(let k = 0; k < res.courses.length; k++){
@@ -72,7 +73,7 @@ useEffect(()=> {
       }
       }
     }
-  )}
+  )}</div>
       <Link to={`/courses`} className="createLink">
           <div className="createButton">BACK</div>
       </Link>

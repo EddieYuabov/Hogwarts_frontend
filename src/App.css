@@ -205,10 +205,30 @@ main {
   justify-content: center;
 }
 
+.gryffindorButton {
+background-color: #b65358;
+}
+
+.slytherinButton {
+  background-color: #509e62;
+}
+
+.hufflepuffButton {
+  background-color: #b3793a;
+}
+
+.ravenclawButton {
+  background-color: #6575a8;
+}
+
 .createButton:hover {
   transform: scale(1.03);
   transition: .1s;
   background-color:rgb(47, 90, 163);
+}
+
+.gryffindorButton:hover {
+  background-color: #8c3438
 }
 
 .studentCardDiv {
@@ -421,19 +441,6 @@ main {
     font-family: 'Spectral SC', serif;
     font-size: 20px;
     letter-spacing: 1px;
-  }
-
-  .gryffindorButton {
-    width: 300px;
-    border: none;
-    border-radius: 50px;
-    height: 50px;
-    font-family: 'Spectral SC', serif;
-    font-size: 20px;
-    letter-spacing: 1px;
-    color: white;
-    background-color: rgb(74, 122, 206);
-    margin: 30px;
   }
 
   .coursesTitle {

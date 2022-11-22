@@ -14,7 +14,7 @@ const CourseCard = ({name, professor, grade}) => {
     case 'Just Dark Arts':
       image = <img src="https://i.imgur.com/iGD4wMQ.png" alt='course-icon'className="courseCardImage"/>
       break;
-    case 'History Of Magic':
+    case 'History of Magic':
       image = <img src="https://i.imgur.com/jsNQs3f.png" alt='house-icon'className="courseCardImage"/>
       break;
     case 'Astronomy':
@@ -24,7 +24,7 @@ const CourseCard = ({name, professor, grade}) => {
       image = <img src="https://i.imgur.com/E6KxV00.png" alt='course-icon'className="courseCardImage"/>
       break;
     case 'Flying Lessons':
-      image = <img src="https://i.imgur.com/3LOX43O.png" alt='course-icon'className="courseCardImage"/>
+      image = <img src="https://i.imgur.com/feprQnR.png" alt='course-icon'className="courseCardImage"/>
       break;
     default:
       break;

@@ -202,6 +202,15 @@ body {
   background-color:rgb(47, 90, 163);
 }
 
+.studentCardDiv {
+  overflow: auto;
+  height: 70vh;
+}
+
+.studentCardDiv::-webkit-scrollbar {
+  display: none;
+}
+
 /* STUDENT CARD */
 
 .cardDiv {
@@ -273,6 +282,7 @@ body {
   letter-spacing: 1px;
   width: 280px;
   margin: 20px 0;
+  padding: 0 0px 0 10px;
 }
 
 .courseProf {
@@ -280,8 +290,17 @@ body {
   font-family: 'Spectral SC', serif;
   font-size: 20px;
   letter-spacing: 1px;
-  width: 180px;
+  width: 200px;
   margin: 20px 0;
+}
+
+.enrolledStudents {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  font-family: 'Spectral SC', serif;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
 /* .studentCourseGrade {
@@ -297,7 +316,7 @@ body {
 .gryffindor {
   background-image: url('../public/assets/images/gryffindorbg.jpg');
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   
 }
 
@@ -305,20 +324,20 @@ body {
 .slytherin {
   background-image: url('../public/assets/images/slytherinbg.jpg');
   background-size: cover;
-  height: 100vh;
+  height: 100%;
 
 }
 
 .hufflepuff {
   background-image: url('../public/assets/images/hufflepuffbg.jpg');
   background-size: cover;
-  height: 100vh;
+  height: 100%;
 }
 
 .ravenclaw {
   background-image: url('../public/assets/images/ravenclawbg.jpg');
   background-size: cover;
-  height: 100vh;
+  height: 100%;
 }
 
 .studentContainer{

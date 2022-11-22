@@ -22,7 +22,7 @@ const Students = () => {
           <div className="createButton">CREATE NEW</div>
         </Link>
       </div>
-      <div>
+      <div className="studentCardDiv">
         {students.map((student) => (
           <Link to={`/${student.id}`} key={student.id} className="cardInfoDiv">
             <StudentCard name={student.name} house={student.house} />

@@ -287,6 +287,7 @@ body {
 .gryffindor {
   background-image: url('../public/assets/images/gryffindorbg.jpg');
   background-size: cover;
+  height: 100vh;
   
 }
 
@@ -294,17 +295,20 @@ body {
 .slytherin {
   background-image: url('../public/assets/images/slytherinbg.jpg');
   background-size: cover;
+  height: 100vh;
 
 }
 
 .hufflepuff {
   background-image: url('../public/assets/images/hufflepuffbg.jpg');
   background-size: cover;
+  height: 100vh;
 }
 
 .ravenclaw {
   background-image: url('../public/assets/images/ravenclawbg.jpg');
   background-size: cover;
+  height: 100vh;
 }
 
 .studentContainer{
@@ -312,6 +316,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  }
+
+  .studentDetailImage {
+    width: 150px;
+    margin: -25px 0 40px 0;
   }
   
   .gradeAlignment{
@@ -347,4 +356,36 @@ body {
     letter-spacing: 1px;
   }
 
+  .gryffindorButton {
+    width: 300px;
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    font-family: 'Spectral SC', serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: white;
+    background-color: rgb(74, 122, 206);
+    margin: 30px;
+  }
+
   /* COURSE DETAILS PAGE */
+
+  .courseCardImage {
+    width: 150px;
+    margin: -25px 0 40px 0;
+  }
+
+  .courseDetailName {
+    font-family: 'Henny Penny', cursive;
+    font-size: 75px;
+    margin: 45px 0 0 0;
+    padding: 0 0 8px 0;
+  }
+
+  .courseDetailProf {
+    font-family: 'Spectral SC', serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin: -40px 0 0 0;
+  }

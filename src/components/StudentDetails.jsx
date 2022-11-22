@@ -62,16 +62,16 @@ let image
 
 switch (student.house) {
   case 'Gryffindor':
-    image = <img src='https://i.imgur.com/bRS19Ph.png' alt='house-icon'/>    
+    image = <img src='https://i.imgur.com/bRS19Ph.png' alt='house-icon' className="studentDetailImage"/>    
     break;
   case 'Slytherin':
-    image = <img src="https://i.imgur.com/smDpCz3.png" alt='house-icon'/>
+    image = <img src="https://i.imgur.com/smDpCz3.png" alt='house-icon' className="studentDetailImage"/>
     break;
   case 'Hufflepuff':
-    image = <img src="https://i.imgur.com/DEjIZf9.png" alt='house-icon'/>
+    image = <img src="https://i.imgur.com/DEjIZf9.png" alt='house-icon' className="studentDetailImage"/>
     break;
   case 'Ravenclaw':
-    image = <img src="https://i.imgur.com/3LOX43O.png" alt='house-icon'/>
+    image = <img src="https://i.imgur.com/3LOX43O.png" alt='house-icon' className="studentDetailImage"/>
     break;
   default:
     break;
@@ -95,7 +95,6 @@ switch (student.house) {
   default:
     break;
 }
-
 
   return (
     

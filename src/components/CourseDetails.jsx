@@ -2,10 +2,20 @@ import React from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Client from '../services/api'
+import StudentCard from './StudentCard'
 
 const CourseDetails = ({ name, professor }) => {
 const [course, setCourse] = useState([])
+const [students, setStudents] = useState([])
 const {courseId} = useParams()
+
+useEffect(() => {
+  const getStudents = async () => {
+    let response = await Client.get('/students')
+    setStudents(response.data)
+  }
+  getStudents()
+},[])
 
 let image
 
@@ -41,12 +51,27 @@ useEffect(()=> {
 }, [])
 
 
-
   return (
     <div>
       <h1 className="courseDetailName">{course.name}</h1>
       <div>{image}</div>
       <h2 className="courseDetailProf">Professor: {course.professor}</h2>
+      {students.map((res) => {
+    for (let i = 0; i < students.length; i++) {
+      for(let k = 0; k < res.courses.length; k++){
+        if (students[i].courses[k].Student_Courses.courseId === course.id) {
+          return (
+            <div key={students[i].id}>
+              <Link to={`/${students[i].id}`} className="cardInfoDiv">
+              <StudentCard name={students[i].name} house={students[i].house} />
+              </Link>
+            </div>
+          )
+        } 
+      }
+      }
+    }
+  )}
       <Link to={`/courses`} className="createLink">
           <div className="createButton">BACK</div>
       </Link>

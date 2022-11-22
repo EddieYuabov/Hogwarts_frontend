@@ -26,6 +26,10 @@ const CourseCard = ({name, professor, grade}) => {
     case 'Flying Lessons':
       image = <img src="https://i.imgur.com/feprQnR.png" alt='course-icon'className="courseCardImage"/>
       break;
+    case 'Potions':
+      image = <img src="https://i.imgur.com/weL947Q.png"
+      alt='course-icon'className="courseCardImage"/>
+      break;
     default:
       break;
   }

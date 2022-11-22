@@ -29,27 +29,45 @@ const CreateStudent = () => {
     <div className="form">
       <div className="formTitle">Create Student</div>
       <form className="studentForm">
-        <label htmlFor="name">Student Name</label>
-        <input
-          onChange={handleChange}
-          type="text"
-          id="name"
-          value={formState.name}
-        />
-        <label htmlFor="email">Student E-mail</label>
-        <input
-          onChange={handleChange}
-          type="text"
-          id="email"
-          value={formState.email}
-        />
-        <label htmlFor="house">Student House</label>
-        <input
-          onChange={handleChange}
-          type="text"
-          id="house"
-          value={formState.house}
-        />
+        <div className="formDiv">
+          <label htmlFor="name" className="formHeading">
+            STUDENT NAME
+          </label>
+          <input
+            onChange={handleChange}
+            type="text"
+            id="name"
+            value={formState.name}
+          />
+        </div>
+        <div className="formDiv">
+          <label htmlFor="email" className="formHeading">
+            EMAIL ADDRESS
+          </label>
+          <input
+            onChange={handleChange}
+            type="text"
+            id="email"
+            value={formState.email}
+          />
+        </div>
+        <div className="formDiv">
+          <label htmlFor="house" className="formHeading">
+            HOUSE
+          </label>
+          <select
+            onChange={handleChange}
+            type="text"
+            id="house"
+            value={formState.house}
+          >
+            <option value="-select your house-">-select your house-</option>
+            <option value="Gryffindor">Gryffindor</option>
+            <option value="Slytherin">Slytherin</option>
+            <option value="Hufflepuff">Hufflepuff</option>
+            <option value="Slytherin">Ravenclaw</option>
+          </select>
+        </div>
       </form>
       <button className="submitButton" type="submit" onClick={handleSubmit}>
         SUBMIT

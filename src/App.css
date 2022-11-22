@@ -13,7 +13,7 @@ body {
 /* HEADER */
 
 .header {
-  background-color: rgb(3, 20, 33, .8);
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
 }
@@ -26,10 +26,13 @@ body {
   width: 100vw;
 }
 
-.homeLink {
+.navLink {
   color: white;
   text-decoration: none;
-  padding:0 10px;
+  padding:0 20px;
+  font-family: 'Spectral SC', serif;
+  font-size: 15px;
+  letter-spacing: 1px;
 }
 
 .navLinks {
@@ -37,43 +40,8 @@ body {
   justify-content: space-between;
 }
 
-/* STUDENT DETAILS PAGE */
-
-.studentContainer{
-display: flex;
-flex-direction: column;
-}
-
-.gradeAlignment{
-  display: flex;
-}
-.studentName {
-  font-family: 'Henny Penny', cursive;
-}
-
-.studentHouse{
-
-}
-
-.gpa{
-
-}
-
-/* COURSE CARD */
-.courseCardContainer{
-
-}
-
-.courseName{
-
-}
-
-.courseProf{
-
-}
-
-.studentCourseGrade{
-
+.navIcon {
+  width: 40px;
 }
 
 /* HOME PAGE */
@@ -98,16 +66,262 @@ flex-direction: column;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  width: 240px;
 }
 
 .homeIcon {
-  width: 100%;
+  width: 90%;
+}
+
+.homeIcon:hover {
+  transform: scale(1.15);
+  transition: .1s;
 }
 
 .homeNavText {
   text-decoration: none;
   color: white;
-  font-family: 'Henny Penny', cursive;
-  font-size: 50px;
+  font-family: 'Spectral SC', serif;
+  font-size: 30px;
+  letter-spacing: 4px;
+  margin: -10px 0 0 0;
 }
+
+.homeLink {
+  text-decoration: none;
+}
+
+.welcome {
+  font-family: 'Henny Penny', cursive;
+  font-size: 80px;
+  margin: -50px 0 0 0;
+  padding: 0 0 40px 0;
+}
+
+.explore {
+  font-family: 'Spectral SC', serif;
+  font-size: 23px;
+  letter-spacing: 1px;
+}
+
+/* FORMS */
+
+.studentForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formHeading {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 10px 0 10px 0;
+  width: 300px;
+  text-align: left;
+}
+
+.formTitle {
+  font-family: 'Henny Penny', cursive;
+  font-size: 75px;
+  margin: 45px 0 0 0;
+  padding: 0 0 8px 0;
+}
+
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 10px;
+}
+
+#name, #email, #house, #professor {
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background-color:rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 0 20px;
+}
+
+.submitButton {
+  width: 300px;
+  border: none;
+  border-radius: 50px;
+  height: 50px;
+  font-family: 'Spectral SC', serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: white;
+  background-color: rgb(74, 122, 206);
+  margin: 30px;
+}
+
+.submitButton:hover {
+  transform: scale(1.03);
+  transition: .1s;
+  background-color:rgb(47, 90, 163)
+}
+
+/* STUDENTS */
+
+.createLink {
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.createButton {
+  width: 300px;
+  border: none;
+  border-radius: 50px;
+  height: 50px;
+  font-family: 'Spectral SC', serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: white;
+  text-decoration: none;
+  background-color: rgb(74, 122, 206);
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.createButton:hover {
+  transform: scale(1.03);
+  transition: .1s;
+  background-color:rgb(47, 90, 163);
+}
+
+/* STUDENT CARD */
+
+.cardDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: center;
+  height: 70px;
+  border-radius: 5px;
+  background-color:rgba(0, 0, 0, 0.4);
+  margin: 10px;
+  width: 550px;
+}
+
+.cardInfoDiv {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.studentCardHouse {
+  text-align: right;
+  font-family: 'Spectral SC', serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  width: 180px;
+  margin: 20px 0;
+}
+
+.studentCardName {
+  text-align: left;
+  font-family: 'Spectral SC', serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  width: 280px;
+  margin: 20px 0;
+}
+
+/* COURSE CARD */
+.courseCardContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: center;
+  height: 70px;
+  border-radius: 5px;
+  background-color:rgba(0, 0, 0, 0.4);
+  margin: 10px;
+  width: 550px;
+}
+
+.courseName {
+  text-align: left;
+  font-family: 'Spectral SC', serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  width: 280px;
+  margin: 20px 0;
+}
+
+.courseProf {
+  text-align: right;
+  font-family: 'Spectral SC', serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  width: 180px;
+  margin: 20px 0;
+}
+
+/* .studentCourseGrade {
+  font-family: 'Spectral SC', serif;
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin: -50px 0 0 0;
+} */
+
+
+/* STUDENT DETAILS PAGE */
+
+.studentContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .gradeAlignment{
+    display: flex;
+  }
+  .studentName {
+    font-family: 'Henny Penny', cursive;
+    font-size: 75px;
+    margin: 45px 0 0 0;
+    padding: 0 0 8px 0;
+  }
+  
+  .studentHouse{
+    font-family: 'Spectral SC', serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin: -50px 0 0 0;
+  }
+  
+  .gpaDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    width: 550px;
+  }
+
+  .gpa, .gpaLetter {
+    padding: 0 10px;
+    font-family: 'Spectral SC', serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  /* COURSE DETAILS PAGE */

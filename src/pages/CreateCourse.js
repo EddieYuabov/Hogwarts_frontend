@@ -28,20 +28,28 @@ const CreateCourse = () => {
     <div className="form">
       <div className="formTitle">Create Course</div>
       <form className="studentForm">
-        <label htmlFor="name">Course Name</label>
-        <input
-          onChange={handleChange}
-          type="text"
-          id="name"
-          value={formState.name}
-        />
-        <label htmlFor="email">Course Professor</label>
-        <input
-          onChange={handleChange}
-          type="text"
-          id="email"
-          value={formState.professor}
-        />
+        <div className="formDiv">
+          <label htmlFor="name" className="formHeading">
+            COURSE NAME
+          </label>
+          <input
+            onChange={handleChange}
+            type="text"
+            id="name"
+            value={formState.name}
+          />
+        </div>
+        <div className="formDiv">
+          <label htmlFor="professor" className="formHeading">
+            PROFESSOR
+          </label>
+          <input
+            onChange={handleChange}
+            type="text"
+            id="professor"
+            value={formState.professor}
+          />
+        </div>
       </form>
       <button className="submitButton" type="submit" onClick={handleSubmit}>
         SUBMIT

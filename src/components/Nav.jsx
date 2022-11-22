@@ -5,11 +5,11 @@ const Nav = () => {
     <div className="header">
         <nav className="navBar">
         <div className="homeLinks">
-        <Link to = '/' className="homeLink">Home</Link>
+        <Link to = '/' className="navLink"><img src="https://i.imgur.com/eCng6Ha.png" className="navIcon"></img></Link>
         </div>
         <div className="navLinks">
-        <Link to = '/students' className="homeLink">Students</Link>
-        <Link to = '/courses' className="homeLink">Courses</Link>
+        <Link to = '/students' className="navLink">Students</Link>
+        <Link to = '/courses' className="navLink">Courses</Link>
         </div>
         </nav>
     </div>

@@ -5,24 +5,25 @@ import '../App.css'
 const Home = () => {
   return (
     <div className="home">
-      <div>Welcome to Hogwarts B!tch</div>
+      <div className="welcome">Welcome to Hogwarts</div>
+      <div className="explore">what would you like to explore?</div>
       <div className="homeNavIcons">
-        <Link to="/students">
+        <Link to="/students" className="homeLink">
           <div className="homeNavDiv">
             <img
               src="https://i.imgur.com/Z0XWgI0.png"
               className="homeIcon"
             ></img>
-            <div className="homeNavText">Students</div>
+            <div className="homeNavText">students</div>
           </div>
         </Link>
-        <Link to="/courses">
+        <Link to="/courses" className="homeLink">
           <div className="homeNavDiv">
             <img
               src="https://i.imgur.com/C3Xb2rg.png"
               className="homeIcon"
             ></img>
-            <div className="homeNavText">Courses</div>
+            <div className="homeNavText">courses</div>
           </div>
         </Link>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Client from '../services/api'
 
@@ -21,6 +21,9 @@ useEffect(()=> {
     <div>
       <h1>{course.name}</h1>
       <h2>{course.professor}</h2>
+      <Link to={`/courses`} className="createLink">
+          <div className="createButton">BACK</div>
+      </Link>
     </div>
   )
 }

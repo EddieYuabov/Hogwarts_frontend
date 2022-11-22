@@ -243,6 +243,16 @@ body {
   margin: 20px 0;
 }
 
+.cardDiv .house {
+  opacity: 0;
+  transition: .4s;
+}
+
+.cardDiv:hover .house {
+  opacity: 1;
+}
+
+
 /* COURSE CARD */
 .courseCardContainer {
   display: flex;

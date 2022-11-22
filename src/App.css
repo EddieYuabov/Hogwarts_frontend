@@ -475,3 +475,42 @@ background-color: #b65358;
     letter-spacing: 1px;
     margin: -40px 0 0 0;
   }
+
+  @media screen and (max-width: 1340px)
+  {
+    .gryffindor {
+      height: 1070px;;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ravenclaw {
+      height: 1070px;;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hufflepuff {
+      height: 1070px;;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slytherin {
+      height: 1070px;;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .studentContainer2 {
+      border: none;
+    }
+  }

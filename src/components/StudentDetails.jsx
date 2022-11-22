@@ -111,12 +111,18 @@ const StudentDetails = () => {
         <h1 className="coursesTitle">Courses</h1>
         <div>
           {courses.map((course) => (
+            <Link
+            to={`/course/${course.id}`}
+            key={course.id}
+            className="cardInfoDiv"
+          >
             <CourseCard
-              name={course.name}
-              professor={course.professor}
+            name={course.name}
+            professor={course.professor}
               grade={course.Student_Courses.grade}
-              key={course.id}
+              
             />
+            </Link>
           ))}
         </div>
         <div className="gpaDiv">

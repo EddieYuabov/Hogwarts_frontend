@@ -284,6 +284,29 @@ body {
 
 /* STUDENT DETAILS PAGE */
 
+.gryffindor {
+  background-image: url('../public/assets/images/gryffindorbg.jpg');
+  background-size: cover;
+  
+}
+
+
+.slytherin {
+  background-image: url('../public/assets/images/slytherinbg.jpg');
+  background-size: cover;
+
+}
+
+.hufflepuff {
+  background-image: url('../public/assets/images/hufflepuffbg.jpg');
+  background-size: cover;
+}
+
+.ravenclaw {
+  background-image: url('../public/assets/images/ravenclawbg.jpg');
+  background-size: cover;
+}
+
 .studentContainer{
   display: flex;
   flex-direction: column;

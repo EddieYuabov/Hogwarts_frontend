@@ -98,15 +98,17 @@ const StudentDetails = () => {
   return (
     <main className={className}>
       <div className="studentContainer">
+        <div className="studentContainer2">
         <div>
           <div className="studentName">{student.name}</div>
           <div>{image}</div>
           <div className="studentHouse">{student.house}</div>
+          <div className="studentEmail">{student.email}</div>
         </div>
       </div>
-
+      </div>
       <div className="courseContainer">
-        <h1>Courses</h1>
+        <h1 className="coursesTitle">Courses</h1>
         <div>
           {courses.map((course) => (
             <CourseCard

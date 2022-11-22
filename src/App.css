@@ -228,7 +228,7 @@ main {
   border-radius: 5px;
   background-color:rgba(0, 0, 0, 0.4);
   margin: 10px;
-  width: 550px;
+  width: 690px;
 }
 
 .cardInfoDiv {
@@ -254,7 +254,7 @@ main {
   font-family: 'Spectral SC', serif;
   font-size: 20px;
   letter-spacing: 1px;
-  width: 280px;
+  width: 400px;
   margin: 20px 0;
 }
 
@@ -278,7 +278,7 @@ main {
   border-radius: 5px;
   background-color:rgba(0, 0, 0, 0.4);
   margin: 10px;
-  width: 550px;
+  width: 690px;
 }
 
 .courseName {
@@ -286,7 +286,7 @@ main {
   font-family: 'Spectral SC', serif;
   font-size: 20px;
   letter-spacing: 1px;
-  width: 280px;
+  width: 400px;
   margin: 20px 0;
   padding: 0 0px 0 10px;
 }
@@ -296,7 +296,7 @@ main {
   font-family: 'Spectral SC', serif;
   font-size: 20px;
   letter-spacing: 1px;
-  width: 200px;
+  width: 300px;
   margin: 20px 0;
 }
 
@@ -319,12 +319,9 @@ main {
   display: none;
 }
 
-/* .studentCourseGrade {
-  font-family: 'Spectral SC', serif;
-  font-size: 40px;
-  letter-spacing: 1px;
-  margin: -50px 0 0 0;
-} */
+.studentCourseGrade {
+  color: rgba(255, 255, 255, 0.7);
+}
 
 
 /* STUDENT DETAILS PAGE */
@@ -340,7 +337,6 @@ main {
   background-image: url('../public/assets/images/slytherinbg.jpg');
   background-size: cover;
   height: 93.5vh;
-
 }
 
 .hufflepuff {
@@ -361,6 +357,12 @@ main {
   justify-content: center;
   align-items: center;
   height: 90%;
+  }
+
+  .studentContainer2 {
+    border-right: 1px solid rgb(255, 255, 255, .8);
+    /* padding: 0 20px 0 0; */
+    width: 600px;
   }
 
   .studentDetailImage {
@@ -384,12 +386,19 @@ main {
     letter-spacing: 1px;
     margin: -50px 0 0 0;
   }
+
+  .studentEmail {
+    font-family: 'Spectral SC', serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
   
   .courseContainer {
     height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .gpaDiv{
@@ -398,7 +407,7 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
-    width: 550px;
+    width: 650px;
   }
 
   .gpa, .gpaLetter {
@@ -419,6 +428,14 @@ main {
     color: white;
     background-color: rgb(74, 122, 206);
     margin: 30px;
+  }
+
+  .coursesTitle {
+    font-family: 'Spectral SC', serif;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 10px 0 -10px 0;
   }
 
   /* COURSE DETAILS PAGE */

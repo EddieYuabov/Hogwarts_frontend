@@ -26,7 +26,7 @@ switch (house) {
   return (
     <div className="cardDiv">
         <h5 className="studentCardName">{name}</h5>
-        <h5 className="studentCardHouse">{house}</h5>    
+        <h5 className="studentCardHouse house" >{house}</h5>    
         {image}
     </div>
   )

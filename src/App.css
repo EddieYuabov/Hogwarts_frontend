@@ -301,6 +301,16 @@ body {
   font-family: 'Spectral SC', serif;
   font-size: 18px;
   letter-spacing: 1px;
+  overflow: auto;
+}
+
+.enrolledStudentsDiv {
+  overflow: auto;
+  height: 30vh;
+}
+
+.enrolledStudentsDiv::-webkit-scrollbar {
+  display: none;
 }
 
 /* .studentCourseGrade {
@@ -319,7 +329,6 @@ body {
   height: 100%;
   
 }
-
 
 .slytherin {
   background-image: url('../public/assets/images/slytherinbg.jpg');

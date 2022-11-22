@@ -95,6 +95,24 @@ const StudentDetails = () => {
       break
   }
 
+  let buttonClass
+  switch (student.house) {
+    case 'Gryffindor':
+      buttonClass = 'createButton gryffindorButton'
+      break
+    case 'Slytherin':
+      buttonClass = 'createButton slytherinButton'
+      break
+    case 'Hufflepuff':
+      buttonClass = 'createButton hufflepuffButton'
+      break
+    case 'Ravenclaw':
+      buttonClass = 'createButton ravenclawButton'
+      break
+    default:
+      break
+  }
+
   return (
     <main className={className}>
       <div className="studentContainer">
@@ -131,7 +149,7 @@ const StudentDetails = () => {
         </div>
 
         <Link to={`/students`} className="createLink">
-          <div className="createButton">BACK</div>
+          <div className={buttonClass}>BACK</div>
         </Link>
       </div>
     </main>

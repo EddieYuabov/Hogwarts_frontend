@@ -10,6 +10,12 @@ body {
   height: 100vh;
 }
 
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
 /* HEADER */
 
 .header {
@@ -316,7 +322,7 @@ body {
 .gryffindor {
   background-image: url('../public/assets/images/gryffindorbg.jpg');
   background-size: cover;
-  height: 100%;
+  height: 93.5vh;
   
 }
 
@@ -324,20 +330,20 @@ body {
 .slytherin {
   background-image: url('../public/assets/images/slytherinbg.jpg');
   background-size: cover;
-  height: 100%;
+  height: 93.5vh;
 
 }
 
 .hufflepuff {
   background-image: url('../public/assets/images/hufflepuffbg.jpg');
   background-size: cover;
-  height: 100%;
+  height: 93.5vh;
 }
 
 .ravenclaw {
   background-image: url('../public/assets/images/ravenclawbg.jpg');
   background-size: cover;
-  height: 100%;
+  height: 93.5vh;
 }
 
 .studentContainer{
@@ -345,6 +351,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 90%;
   }
 
   .studentDetailImage {
@@ -369,6 +376,13 @@ body {
     margin: -50px 0 0 0;
   }
   
+  .courseContainer {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .gpaDiv{
     display: flex;
     flex-direction: row;

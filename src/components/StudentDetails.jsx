@@ -78,19 +78,37 @@ switch (student.house) {
 }
 
 
+let className
+switch (student.house) {
+  case 'Gryffindor':
+    className = "gryffindor"  
+    break;
+  case 'Slytherin':
+    className = "slytherin"
+    break;
+  case 'Hufflepuff':
+    className = "hufflepuff"
+    break;
+  case 'Ravenclaw':
+    className = "ravenclaw"
+    break;
+  default:
+    break;
+}
+
 
   return (
     
-    <div>
+    <main className={className}>
       <div className='studentContainer'>
         <div>
           <div className="studentName">
         {student.name}
         </div>
+        <div>{image}</div>
         <div className='studentHouse'>
         {student.house}
         </div>
-        <div>{image}</div>
         </div>
         <div>
         {courses.map((course) => (
@@ -105,7 +123,7 @@ switch (student.house) {
       <Link to={`/students`} className="createLink">
           <div className="createButton">BACK</div>
       </Link>
-    </div>
+    </main>
   )
 }
 

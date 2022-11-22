@@ -29,7 +29,7 @@ const StudentDetails = () => {
       element.Student_Courses.grade
     ))
     const average = grades.reduce((a, b) => a + b, 0) / grades.length
-    setGpa(average)
+    setGpa(average.toFixed(2))
   }
 
 

@@ -12,7 +12,7 @@ Our beautifully orchestrated trello link:
  • Aaron Sanchez
 ##
 ## Heroku Links
-#### [Heroku Link - Frontend](https://hogwarts-pern.herokuapp.com/students)
+#### [Heroku Link - Frontend](https://hogwarts-pern.herokuapp.com/)
 #### [Heroku Link - Backend](https://hogwarts-pern-backend.herokuapp.com/)
 ## 
 ## Overview

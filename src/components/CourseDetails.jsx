@@ -26,7 +26,7 @@ switch (course.name) {
   case 'Just Dark Arts':
     image = <img src="https://i.imgur.com/iGD4wMQ.png" alt='course-icon'className="courseDetailImage"/>
     break;
-  case 'History Of Magic':
+  case 'History of Magic':
     image = <img src="https://i.imgur.com/jsNQs3f.png" alt='house-icon'className="courseDetailImage"/>
     break;
   case 'Astronomy':
@@ -36,7 +36,11 @@ switch (course.name) {
     image = <img src="https://i.imgur.com/E6KxV00.png" alt='course-icon'className="courseDetailImage"/>
     break;
   case 'Flying Lessons':
-    image = <img src="hhttps://i.imgur.com/feprQnR.png" alt='course-icon'className="courseDetailImage"/>
+    image = <img src="https://i.imgur.com/feprQnR.png" alt='course-icon'className="courseDetailImage"/>
+    break;
+  case 'Potions':
+    image = <img src="https://i.imgur.com/weL947Q.png"
+    alt='course-icon'className="courseCardImage"/>
     break;
   default:
     break;

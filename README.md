@@ -27,7 +27,7 @@ Our beautifully orchestrated trello link:
 
 ## Overview
 
-Our project is a Hogwarts themed application which displays the students that're attending Hogwarts, as well as courses they're in and their professor. You can create a new student and select which house they're in, and create a new course with a professor
+Our project is a Hogwarts themed application which displays the students that're attending Hogwarts, as well as courses they're in and their professor. You can create a new student and select which house they're in, and create a new course with a professor.
 
 ![Screen Shot 2022-11-22 at 11 07 31 AM (3)](https://user-images.githubusercontent.com/113399775/203363676-516eab6e-4007-48a3-b26a-d0505acb5fe2.png)
 

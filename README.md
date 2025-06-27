@@ -19,9 +19,9 @@ Our beautifully orchestrated trello link:
 
 ## Heroku Links
 
-#### [Railway Link - Frontend](https://hogwartsfrontend-production.up.railway.app/)
+#### [Railway Link - Frontend](https://hogwartsfrontend-production.up.railway.app/) (DEPRECATED)
 
-#### [Heroku Link - Backend](https://hogwarts-pern-backend.herokuapp.com/)
+#### [Heroku Link - Backend](https://hogwarts-pern-backend.herokuapp.com/) (DEPRECATED)
 
 ##
 
